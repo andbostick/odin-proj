@@ -1,0 +1,10 @@
+div div {
+  height: 50px;
+  width: 50px;
+  border: red 1px solid;
+}
+
+.gameboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
