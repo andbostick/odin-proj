@@ -25,8 +25,11 @@ function createBook(e) {
     const author = document.querySelector('#author')
     const pages = document.querySelector('#pages')
     const read = document.querySelector('#read')
-    console.log(e.target.name)
-
+    console.log(e.target.name.value)
+  let bookName = e.target.name.value;
+  bookName = new Book(title.value, author.value, pages.value, read.value);
+  myLibrary.push(bookName)
+  console.log(bookName)
 }
 
 function addBookToLibrary(arr) {
