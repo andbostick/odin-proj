@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function General() {
   return (
       <section>
@@ -12,7 +13,8 @@ export default function General() {
      
         <input type="text" placeholder="title" />
         
-        <input type="text" placeholder="phone number" />
+              <input type="text" placeholder="phone number" />
+              
       </form>
     </section>
   );
