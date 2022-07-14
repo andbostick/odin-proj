@@ -1,16 +1,17 @@
-import React from 'react'
+import React from "react";
+import { Input } from "@mui/material";
 
 export default function Education() {
   return (
-      <section>
+    <section>
       <h2>Education</h2>
-          <form>
-              <input type="text" placeholder='University name' />
-              <input type="text" placeholder='City' />
-              <input type="text" placeholder='Degree' />
-              <input type="text" placeholder='Subject' />
-              <input type="text" placeholder='Year Graduated' />
-          </form>
-      </section>
-  )
+      <form>
+        <Input type="text" placeholder="University name" />
+        <Input type="text" placeholder="City" />
+        <Input type="text" placeholder="Degree" />
+        <Input type="text" placeholder="Subject" />
+        <Input type="text" placeholder="Year Graduated" />
+      </form>
+    </section>
+  );
 }

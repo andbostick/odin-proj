@@ -1,7 +1,8 @@
-import './App.css';
+import './styles/App.css';
 import Education from './components/Education';
 import Experience from './components/Experience';
 import General from './components/General';
+import { Paper } from '@mui/material';
 
 function App() {
   return (
@@ -10,11 +11,11 @@ function App() {
         <h1>CV Creator</h1>
         
       </header>
-      <main>
+      <Paper elevation={3} className='container'>
       <General />
         <Experience />
         <Education />
-      </main>
+      </Paper>
     </div>
   );
 }
