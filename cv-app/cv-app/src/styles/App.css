@@ -1,7 +1,9 @@
 .container {
-  margin: 100px;
   padding: 20px;
   width: 35%;
+}
+
+.main-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
 }

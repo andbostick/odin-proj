@@ -1,5 +1,5 @@
 import React from 'react'
-import { Input } from "@mui/material";
+import { TextField } from '@mui/material';
 
 export default function Experience() {
   return (
@@ -7,15 +7,15 @@ export default function Experience() {
           <h2>Experience</h2>
           <form>
           
-              <Input type='text' placeholder="position" />
+              <TextField variant="filled" size="small" margin="dense" placeholder="position" />
               
-          <Input type='text' placeholder="Company"/>
+          <TextField variant="filled" size="small" margin="dense" placeholder="Company"/>
           
-              <Input type='text' placeholder="City" />
+              <TextField variant="filled" size="small" margin="dense" placeholder="City" />
 
             
-              <Input type='text' placeholder="From" />
-              <Input type='text' placeholder="To"/>
+              <TextField variant="filled" size="small" margin="dense" placeholder="From" />
+              <TextField variant="filled" size="small" margin="dense" placeholder="To"/>
           </form>
       </section>
   )

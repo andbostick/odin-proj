@@ -3,6 +3,7 @@ import Education from './components/Education';
 import Experience from './components/Experience';
 import General from './components/General';
 import { Paper } from '@mui/material';
+import FilledGeneral from './components/FilledGeneral';
 
 function App() {
   return (
@@ -11,11 +12,16 @@ function App() {
         <h1>CV Creator</h1>
         
       </header>
+      <main className='main-container'>
       <Paper elevation={3} className='container'>
       <General />
         <Experience />
         <Education />
       </Paper>
+      <Paper className='container'>
+      <FilledGeneral />
+        </Paper>
+        </main>
     </div>
   );
 }

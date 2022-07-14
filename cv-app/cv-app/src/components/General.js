@@ -1,19 +1,19 @@
 import React from "react";
 import '../styles/Input.css'
-import { Input } from "@mui/material";
+import { TextField } from '@mui/material';
 
 export default function General() {
   return (
     <section>
       <h2>Personal Information</h2>
       <form>
-        <Input type="text" placeholder="name" />
+        <TextField variant="filled" size="small" margin="dense" type="text" placeholder="name" />
 
-        <Input type="text" placeholder="email" />
+        <TextField variant="filled" size="small" margin="dense" placeholder="email" />
 
-        <Input type="text" placeholder="title" />
+        <TextField variant="filled" size="small" margin="dense" placeholder="title" />
 
-        <Input type="text" placeholder="phone number" />
+        <TextField variant="filled" size="small" margin="dense" placeholder="phone number" />
       </form>
     </section>
   );
