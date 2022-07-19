@@ -7,7 +7,7 @@ export default function FilledExperience({experience}) {
           <h2 className='title'>Experience</h2>
           <Box sx={{
               width: '100%',
-              height: 200
+              minHeight: 200
           }}
               className='experience-box'>
               <div>
@@ -19,7 +19,8 @@ export default function FilledExperience({experience}) {
                   <p>{experience.from}</p>
                   -
                   <p>{experience.to}</p>
-                  </div>
+              </div>
+              <div>{experience.tasks}</div>
               </Box>
       </section>
   )

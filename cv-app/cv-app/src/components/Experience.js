@@ -17,7 +17,7 @@ export default function Experience({ setExperience, experience }) {
           variant="filled"
           size="small"
           margin="dense"
-          placeholder="Position"
+          label="Position"
           name="position"
         />
 
@@ -26,7 +26,7 @@ export default function Experience({ setExperience, experience }) {
           variant="filled"
           size="small"
           margin="dense"
-          placeholder="Company"
+          label="Company"
           name="company"
         />
 
@@ -35,7 +35,7 @@ export default function Experience({ setExperience, experience }) {
           variant="filled"
           size="small"
           margin="dense"
-          placeholder="City"
+          label="City"
           name="city"
         />
 
@@ -44,7 +44,7 @@ export default function Experience({ setExperience, experience }) {
           variant="filled"
           size="small"
           margin="dense"
-          placeholder="From"
+          label="From"
           name="from"
         />
         <TextField
@@ -52,8 +52,17 @@ export default function Experience({ setExperience, experience }) {
           variant="filled"
           size="small"
           margin="dense"
-          placeholder="To"
+          label="To"
           name="to"
+        />
+        <TextField
+          label="Tasks"
+          name="tasks"
+          multiline='true'
+          variant="filled"
+          onChange={handleChange}
+          rows={4}
+          margin="dense"
         />
       </form>
     </section>

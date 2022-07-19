@@ -7,19 +7,22 @@ export default function FilledGeneral({personalInfo}) {
       <Box
         sx={{
           backgroundColor: '#189AB4',
-          height: 175,
+          minHeight: 175,
           width: "100%",
           
           
         }}
         className='header-box'
       >
+        <div>
         <h2>{personalInfo.name}</h2>
-        
-        
-        <p>{personalInfo.email}</p>
         <p>{personalInfo.title}</p>
+        </div>
+        <div>
+        <p>{personalInfo.email}</p>
+        
           <p>{personalInfo.number}</p>
+          </div>
           
       </Box>
       

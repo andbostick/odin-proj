@@ -5,6 +5,7 @@ import Experience from "./components/Experience";
 import General from "./components/General";
 import { Container } from "@mui/material";
 import { Paper } from "@mui/material";
+import { Button } from '@mui/material';
 import CompletedCV from "./components/CompletedCV";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     city: "",
     from: "",
     to: "",
+    tasks: '',
   });
   const [education, setEducation] = useState({
     university: '',
@@ -43,6 +45,7 @@ function App() {
 
           <Experience experience={experience} setExperience={setExperience} />
           <Education education={education} setEducation={setEducation} />
+          
           </Paper>
           </Container>
         <CompletedCV personalInfo={personalInfo} experience={experience} education={education} />

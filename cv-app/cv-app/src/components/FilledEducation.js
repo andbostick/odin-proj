@@ -6,7 +6,7 @@ export default function FilledEducation({ education }) {
       <div>
           <Box sx={{
             width: '100%',
-            height: 250
+            minHeight: 250
           }}
           className='education-box'>
               <h2 className='title'>Education</h2>
