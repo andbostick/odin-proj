@@ -5,10 +5,17 @@ import Experience from "./components/Experience";
 import General from "./components/General";
 import { Container } from "@mui/material";
 import { Paper } from "@mui/material";
+import { useRef } from "react";
+import ReactToPrint, { useReactToPrint } from 'react-to-print'
 import { Button } from '@mui/material';
 import CompletedCV from "./components/CompletedCV";
 
 function App() {
+  const componentRef = useRef(null);
+  const handlePrint = useReactToPrint({
+    content: () => componentRef.current
+  });
+
   const [personalInfo, setPersonalInfo] = useState({
     name: "",
     email: "",
@@ -36,7 +43,7 @@ function App() {
         <h1>CV Creator</h1>
       </header>
       <main className="main-container">
-        <Container maxWidth="sm" >
+        <Container maxWidth="md" >
         <Paper elevation={3} sx={{padding:4}}>
           <General
             personalInfo={personalInfo}
@@ -46,9 +53,12 @@ function App() {
           <Experience experience={experience} setExperience={setExperience} />
           <Education education={education} setEducation={setEducation} />
           
+          <Button onClick={handlePrint}>Print Resume</Button>
           </Paper>
+          
           </Container>
-        <CompletedCV personalInfo={personalInfo} experience={experience} education={education} />
+         
+        <CompletedCV ref={componentRef} personalInfo={personalInfo} experience={experience} education={education} />
       </main>
     </div>
   );

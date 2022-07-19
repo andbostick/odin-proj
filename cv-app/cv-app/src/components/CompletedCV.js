@@ -1,3 +1,4 @@
+
 import { Paper } from "@mui/material";
 import { Container } from "@mui/material";
 import FilledGeneral from "./FilledGeneral";
@@ -7,15 +8,18 @@ import "../styles/completed.css";
 
 import React from "react";
 
-export default function CompletedCV({ personalInfo, experience, education }) {
-  return (
-    <Container maxWidth="sm" >
-      <Paper elevation={3} >
-              <FilledGeneral personalInfo={personalInfo} />
+const CompletedCV = React.forwardRef(({personalInfo,experience,education}, ref) => {
+    return (
+        <Container maxWidth="md" >
+          <Paper elevation={3} ref={ref}>
+            <FilledGeneral personalInfo={personalInfo} />
+    
+            <FilledExperience experience={experience} />
+            <FilledEducation education={education} />
+              </Paper>
               
-        <FilledExperience experience={experience} />
-        <FilledEducation education={education} />
-      </Paper>
-    </Container>
-  );
-}
+        </Container>
+      );
+})
+
+export default CompletedCV;

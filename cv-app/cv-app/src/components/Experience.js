@@ -58,7 +58,7 @@ export default function Experience({ setExperience, experience }) {
         <TextField
           label="Tasks"
           name="tasks"
-          multiline='true'
+          multiline
           variant="filled"
           onChange={handleChange}
           rows={4}
