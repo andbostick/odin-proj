@@ -1,6 +1,8 @@
-.container {
-  padding: 20px;
-  width: 35%;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #d4f1f4;
 }
 
 .main-container {

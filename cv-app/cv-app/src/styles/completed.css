@@ -1,4 +1,50 @@
-.container {
-  padding: 20px;
-  width: 35%;
+.header-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.header-box p:nth-child(2) {
+  padding: 15px;
+  justify-self: end;
+}
+.header-box p:nth-child(4) {
+  padding: 15px;
+  justify-self: end;
+}
+
+.header-box p:nth-child(3) {
+  padding: 15px;
+}
+
+.header-box h2 {
+  padding: 15px;
+}
+
+.experience-box div {
+  padding: 0 15px 0 15px;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.experience-box div:nth-child(2) {
+  font-style: italic;
+}
+
+.title {
+  padding: 15px;
+  text-decoration: underline;
+}
+
+.education-box div {
+  padding: 0 15px 0 15px;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.education-box div:nth-child(4) {
+  font-style: italic;
 }

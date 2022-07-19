@@ -3,6 +3,7 @@ import "./styles/App.css";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import General from "./components/General";
+import { Container } from "@mui/material";
 import { Paper } from "@mui/material";
 import CompletedCV from "./components/CompletedCV";
 
@@ -33,7 +34,8 @@ function App() {
         <h1>CV Creator</h1>
       </header>
       <main className="main-container">
-        <Paper elevation={3} className="container">
+        <Container maxWidth="sm" >
+        <Paper elevation={3} sx={{padding:4}}>
           <General
             personalInfo={personalInfo}
             setPersonalInfo={setPersonalInfo}
@@ -41,7 +43,8 @@ function App() {
 
           <Experience experience={experience} setExperience={setExperience} />
           <Education education={education} setEducation={setEducation} />
-        </Paper>
+          </Paper>
+          </Container>
         <CompletedCV personalInfo={personalInfo} experience={experience} education={education} />
       </main>
     </div>
